@@ -1,7 +1,6 @@
 """
 Where is the ISS At.
 By: Saiko2043
-LICENSE: MIT
 """
 import requests
 import matplotlib.pyplot as plt
