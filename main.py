@@ -1,7 +1,3 @@
-"""
-Where is the ISS At.
-By: Saiko2043
-"""
 import requests
 import matplotlib.pyplot as plt
 # import random # WAS ONLY NECESSARY DURING DEBUGING
