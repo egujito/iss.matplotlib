@@ -42,9 +42,14 @@ ax2.ticklabel_format(useOffset=False, style='plain')
 ax3.ticklabel_format(useOffset=False, style='plain')
 ax4.ticklabel_format(useOffset=False, style='plain')
 
+# Better organize into multiple functions
+def requestData():
+    requested = requests.get(url).json()
+    return requested
+
 def updateData(i):
     
-    data = requests.get(url).json()
+    data = requestData()
  
     
     velocity = data['velocity']
