@@ -5,7 +5,7 @@ By: Saiko2043
 import requests
 import matplotlib.pyplot as plt
 from matplotlib import style
-# import random # debugging only
+# import random # WAS ONLY NECESSARY DURING DEBUGING
 from itertools import count
 from matplotlib.animation import FuncAnimation
 
