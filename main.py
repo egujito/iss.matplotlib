@@ -5,7 +5,7 @@ By: Saiko2043
 import requests
 import matplotlib.pyplot as plt
 from matplotlib import style
-import random
+# import random # debugging only
 from itertools import count
 from matplotlib.animation import FuncAnimation
 
@@ -24,21 +24,29 @@ fig = plt.figure(figsize=(15,15))
 
 fig.suptitle("ISS TRACKER")
 
+
 ax1 = fig.add_subplot(2, 2, 1)
 ax2 = fig.add_subplot(2, 2, 2, sharex= ax1)
 ax3 = fig.add_subplot(2, 2, 3, sharex= ax1)
 ax4 = fig.add_subplot(2, 2, 4, sharex=ax1)
 
 
+ax1.set_xlabel('time (s)')
+ax2.set_xlabel('time (s)')
+ax3.set_xlabel('time (s)')
+ax4.set_xlabel('time (s)')
+
 ax1.set_ylabel('Velocity')
 ax2.set_ylabel('Altitude')
 ax3.set_ylabel('Latitude')
 ax4.set_ylabel('Longitude')
 
-""" ax1.ticklabel_format(useOffset=False, style='plain')
+
+# uncomment this line if you don't want the figure to display scientific notation
+# ax1.ticklabel_format(useOffset=False, style='plain')
 ax2.ticklabel_format(useOffset=False, style='plain')
 ax3.ticklabel_format(useOffset=False, style='plain')
-ax4.ticklabel_format(useOffset=False, style='plain') """
+ax4.ticklabel_format(useOffset=False, style='plain')
 
 def updateData(i):
     
