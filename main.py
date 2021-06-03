@@ -36,7 +36,6 @@ ax2.set_ylabel('Altitude')
 ax3.set_ylabel('Latitude')
 ax4.set_ylabel('Longitude')
 
-
 # uncomment this line if you don't want the figure to display scientific notation
 # ax1.ticklabel_format(useOffset=False, style='plain')
 ax2.ticklabel_format(useOffset=False, style='plain')
