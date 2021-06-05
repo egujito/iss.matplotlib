@@ -3,7 +3,6 @@ import matplotlib
 # SET BACKEND
 matplotlib.use("Qt5Agg")
 import matplotlib.pyplot as plt
-# import random # WAS ONLY NECESSARY DURING DEBUGING
 from itertools import count
 from matplotlib.animation import FuncAnimation
 
