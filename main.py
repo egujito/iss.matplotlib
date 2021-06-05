@@ -71,5 +71,19 @@ def updateData(i):
     ax3.plot(x_delta_time, y_latitude, color='orange')
     ax4.plot(x_delta_time, y_longitude, color='green')
 
+    print("i value" + str(i))
+    print("len " + str(len(y_velocity)))
+
+    #pop from the array the index 0
+    #when the array lenght is greater
+    #than 10
+    if(len(y_velocity) > 10):
+        print("nice")
+        y_velocity.pop(0)
+        y_altitude.pop(0)
+        y_longitude.pop(0)
+        y_latitude.pop(0)
+        x_delta_time.pop(0)
+
 animate = FuncAnimation(fig, updateData, interval = 1000)
 plt.show()
